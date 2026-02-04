@@ -1,13 +1,14 @@
 package oop_00000106618_NevanAndertonLie.week01 // Pastikan package sesuai
 
+fun calculateStatus(score: Int) =
+    if (score > 75) "Lulus" else "Tidak Lulus"
+
 fun main() {
     val name: String = "John Thor"
     val score: Int = 80
 
-    // Concatenation gaya lama
     println("Nama: " + name + ", Nilai: " + score)
 
-    // Tambahkan di bawah println
     val grade = when (score) {
         in 90..<=100 -> "A"
         in 80..<=89 -> "B"
@@ -16,4 +17,6 @@ fun main() {
     }
 
     println("Grade kamu: $grade")
+    println("Status: ${calculateStatus(score)}")
 }
+
