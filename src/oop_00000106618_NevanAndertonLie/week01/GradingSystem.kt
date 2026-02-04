@@ -18,5 +18,10 @@ fun main() {
 
     println("Grade kamu: $grade")
     println("Status: ${calculateStatus(score)}")
+
+    // Tambahkan di akhir main()
+    val studentId: String? = null
+    val idLength = studentId?.length ?: 0
+    println("Panjang ID: $idLength")
 }
 
