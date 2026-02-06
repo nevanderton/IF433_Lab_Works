@@ -7,9 +7,10 @@ fun main() {
 
     val finalPrice = calculateDiscount(price)
 
-    println("Judul Game : $gameTitle")
-    println("Harga Asli : Rp$price")
-    println("Harga Akhir: Rp$finalPrice")
+    printReceipt(
+        title = gameTitle,
+        finalPrice = finalPrice
+    )
 }
 
 fun calculateDiscount(price: Int): Int =
@@ -17,3 +18,9 @@ fun calculateDiscount(price: Int): Int =
         price - (price * 20 / 100)
     else
         price - (price * 10 / 100)
+
+fun printReceipt(title: String, finalPrice: Int) {
+    println("===== STRUK PEMBELIAN =====")
+    println("Judul Game : $title")
+    println("Harga Akhir: Rp$finalPrice")
+}
