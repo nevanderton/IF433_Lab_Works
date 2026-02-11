@@ -23,4 +23,6 @@ fun main() {
 
     println("Cumlaude Status: ${student1.isCumlaude()}")
 
+    println("Status Kelulusan: ${student1.status}")
+
 }

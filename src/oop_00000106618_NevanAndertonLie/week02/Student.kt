@@ -8,6 +8,9 @@ class Student(
 
     var gpa: Double = 0.0
 
+    val status: String
+        get() = if (gpa >= 3.5) "Cumlaude" else "Regular"
+
     constructor(nim: String, name: String, major: String, gpa: Double)
             : this(nim, name, major) {
         this.gpa = gpa
