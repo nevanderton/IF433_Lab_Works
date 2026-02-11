@@ -20,4 +20,7 @@ fun main() {
     student1.changeMajor("Computer Science")
 
     println(student1.introduce())
+
+    println("Cumlaude Status: ${student1.isCumlaude()}")
+
 }

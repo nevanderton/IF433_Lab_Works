@@ -35,4 +35,8 @@ class Student(
         major = newMajor
         println("Jurusan berhasil diubah menjadi $major")
     }
+
+    fun isCumlaude(): Boolean {
+        return gpa >= 3.5
+    }
 }
