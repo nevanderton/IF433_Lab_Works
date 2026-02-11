@@ -27,16 +27,13 @@ class Student(
         }
     }
 
-    fun introduce(): String {
-        return "Halo, saya $name dari jurusan $major dengan IPK $gpa."
-    }
+    fun introduce(): String =
+        "Halo, saya $name dari jurusan $major dengan IPK $gpa."
 
     fun changeMajor(newMajor: String) {
         major = newMajor
         println("Jurusan berhasil diubah menjadi $major")
     }
 
-    fun isCumlaude(): Boolean {
-        return gpa >= 3.5
-    }
+    fun isCumlaude(): Boolean = gpa >= 3.5
 }
