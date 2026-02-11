@@ -15,4 +15,7 @@ fun main() {
 
     println(student1.introduce())
 
+    student1.changeMajor("Computer Science")
+
+    println(student1.introduce())
 }

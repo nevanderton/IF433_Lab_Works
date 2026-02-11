@@ -23,4 +23,9 @@ class Student(
     fun introduce(): String {
         return "Halo, saya $name dari jurusan $major."
     }
+
+    fun changeMajor(newMajor: String) {
+        major = newMajor
+        println("Jurusan berhasil diubah menjadi $major")
+    }
 }
