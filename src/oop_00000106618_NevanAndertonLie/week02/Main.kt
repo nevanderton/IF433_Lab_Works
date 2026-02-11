@@ -5,13 +5,15 @@ fun main() {
     val student1 = Student(
         nim = "0000010661",
         name = "Nevan Anderton Lie",
-        major = "Informatics"
+        major = "Informatics",
+        gpa = 3.75
     )
 
     println("=== STUDENT DATA ===")
     println("NIM   : ${student1.nim}")
     println("Name  : ${student1.name}")
     println("Major : ${student1.major}")
+    println("GPA   : ${student1.gpa}")
 
     println(student1.introduce())
 
