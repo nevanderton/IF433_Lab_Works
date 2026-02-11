@@ -6,6 +6,13 @@ class Student(
     var major: String
 ) {
 
+    var gpa: Double = 0.0
+
+    constructor(nim: String, name: String, major: String, gpa: Double)
+            : this(nim, name, major) {
+        this.gpa = gpa
+    }
+
     init {
         if (nim.length != 10) {
             println("WARNING: NIM harus 10 digit!")
@@ -21,7 +28,7 @@ class Student(
     }
 
     fun introduce(): String {
-        return "Halo, saya $name dari jurusan $major."
+        return "Halo, saya $name dari jurusan $major dengan IPK $gpa."
     }
 
     fun changeMajor(newMajor: String) {
