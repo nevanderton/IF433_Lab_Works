@@ -19,4 +19,8 @@ class Student(
             println("WARNING: Jurusan tidak boleh kosong!")
         }
     }
+
+    fun introduce(): String {
+        return "Halo, saya $name dari jurusan $major."
+    }
 }

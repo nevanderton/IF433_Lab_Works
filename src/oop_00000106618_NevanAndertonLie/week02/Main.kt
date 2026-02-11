@@ -12,4 +12,7 @@ fun main() {
     println("NIM   : ${student1.nim}")
     println("Name  : ${student1.name}")
     println("Major : ${student1.major}")
+
+    println(student1.introduce())
+
 }
