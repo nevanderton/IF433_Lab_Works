@@ -4,6 +4,7 @@ fun main() {
 
     val car = Car("Toyota", 4)
     val motor = Motorcycle("Yamaha", false)
+    val tesla = ElectricCar("Tesla", 4)
 
     println("=== CAR ===")
     car.accelerate()
@@ -15,9 +16,15 @@ fun main() {
     motor.honk()
     motor.doWheelie()
 
+    println("\n=== ELECTRIC CAR ===")
+    tesla.accelerate()
+    tesla.honk()
+    tesla.showChargingPort()
+    tesla.chargeBattery()
+
     println("\n=== POLYMORPHISM TEST ===")
 
-    val vehicles: List<Vehicle> = listOf(car, motor)
+    val vehicles: List<Vehicle> = listOf(car, motor, tesla)
 
     for (vehicle in vehicles) {
         vehicle.accelerate()
