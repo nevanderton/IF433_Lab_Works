@@ -11,7 +11,6 @@ class Employee(val name: String) {
             }
         }
 
-    // Hanya bisa diakses di file/class ini saja
     private var performanceRating: Int = 3
 
     fun increasePerformance() {
@@ -23,7 +22,6 @@ class Employee(val name: String) {
         println("Karyawan: $name, Rating: $performanceRating")
     }
 
-    // Tax (Pajak) dihitung 10% dari gaji saat ini
     val tax: Double
         get() = salary * 0.1
 }
