@@ -1,19 +1,17 @@
 package oop_00000106618_NevanAndertonLie.week03
 
-class Employee {
-
-    var name: String = ""
+class Employee(val name: String) {
 
     var salary: Int = 0
         set(value) {
             if (value >= 0) {
                 field = value
             } else {
-                println("Salary tidak boleh negatif!")
+                println("Error: Salary tidak boleh negatif!")
             }
         }
 
-    // Hanya bisa diakses di dalam class
+    // Hanya bisa diakses di file/class ini saja
     private var performanceRating: Int = 3
 
     fun increasePerformance() {
@@ -24,4 +22,8 @@ class Employee {
     fun printStatus() {
         println("Karyawan: $name, Rating: $performanceRating")
     }
+
+    // Tax (Pajak) dihitung 10% dari gaji saat ini
+    val tax: Double
+        get() = salary * 0.1
 }
