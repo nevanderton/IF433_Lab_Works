@@ -14,4 +14,13 @@ fun main() {
     motor.accelerate()
     motor.honk()
     motor.doWheelie()
+
+    println("\n=== POLYMORPHISM TEST ===")
+
+    val vehicles: List<Vehicle> = listOf(car, motor)
+
+    for (vehicle in vehicles) {
+        vehicle.accelerate()
+        vehicle.honk()
+    }
 }
