@@ -18,4 +18,13 @@ fun main() {
     weapon.damage = 9999
 
     println("Tier Weapon: ${weapon.tier}")
+
+    // ===== TEST PLAYER =====
+    val player = Player("Zed")
+
+    // println(player.xp) // ERROR: xp private
+
+    player.addXp(50)
+    player.addXp(60)
 }
+
