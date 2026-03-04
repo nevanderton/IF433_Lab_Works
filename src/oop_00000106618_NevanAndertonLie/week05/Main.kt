@@ -32,4 +32,17 @@ fun main() {
 
         println("----------------------------")
     }
+
+    println("=== TEST MATH HELPER ===")
+
+    val mathHelper = MathHelper()
+
+    val luasPersegi = mathHelper.hitungLuas(4)
+    println("Luas Persegi: $luasPersegi")
+
+    val luasPersegiPanjang = mathHelper.hitungLuas(5, 6)
+    println("Luas Persegi Panjang: $luasPersegiPanjang")
+
+    val luasLingkaran = mathHelper.hitungLuas(7.0)
+    println("Luas Lingkaran: $luasLingkaran")
 }
