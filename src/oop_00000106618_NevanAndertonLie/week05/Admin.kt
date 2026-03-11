@@ -1,6 +1,6 @@
 package oop_00000106618_NevanAndertonLie.week05
 
-class Admin(nama: String) : Pegawai(nama) {
+class Admin(nama: String, override val nidn: String) : Pegawai(nama) {
 
     override fun bekerja() {
         println("$nama sedang duduk di depan komputer melayani administrasi.");
