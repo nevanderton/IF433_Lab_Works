@@ -3,7 +3,10 @@ package oop_00000106618_NevanAndertonLie.week05
 fun main() {
 
     val dosen1 = Dosen(nama = "Pak Alex", nidn = "0123456")
-    val admin1 = Admin(nama = "Bu Siti")
+    val admin1 = Admin(
+        nama = "Bu Siti",
+        nidn = TODO()
+    )
 
     // Polymorphic Collection: List yang berisi tipe Parent, tapi isinya objek Anak
     val daftarPegawai: List<Pegawai> = listOf(dosen1, admin1)
