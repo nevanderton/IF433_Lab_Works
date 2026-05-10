@@ -38,6 +38,11 @@ fun main() {
     println(uiMessage)
 
     println("\n=== TEST GAME MANAGER SINGLETON ===")
-    GameManager.startGame() // Pertama kali: memulai game
-    GameManager.startGame() // Kedua kali: membuktikan singleton menahan duplikasi
+    GameManager.startGame()
+    GameManager.startGame()
+
+    println("\n=== TEST RARITY & FACTORY ===")
+    println("Drop chance LEGENDARY: ${ItemRarity.LEGENDARY.dropChance}%")
+    val starterSword = Weapon.forgeStarterSword()
+    println("Senjata awal: $starterSword")
 }
