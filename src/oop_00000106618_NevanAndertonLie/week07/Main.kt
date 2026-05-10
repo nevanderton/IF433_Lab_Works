@@ -33,7 +33,11 @@ fun main() {
     val uiMessage = when (response) {
         is ApiResponse.Success -> "Tampilkan: ${response.data}"
         is ApiResponse.Error -> "Munculkan alert: ${response.message}"
-        is ApiResponse.Loading -> "Tampilkan Spinner" // Fix: tambahkan Loading
+        is ApiResponse.Loading -> "Tampilkan Spinner"
     }
     println(uiMessage)
+
+    println("\n=== TEST GAME MANAGER SINGLETON ===")
+    GameManager.startGame() // Pertama kali: memulai game
+    GameManager.startGame() // Kedua kali: membuktikan singleton menahan duplikasi
 }
